@@ -1,0 +1,66 @@
+<div class="mainCont">
+<div id="itemsContainer">
+
+<h1>Thank You</h1>
+<br>
+<p>You have just Created an order</p>
+
+</div>
+
+
+<table id="customers">
+    <tr>
+        <% @orders.limit(1).order(id: :desc).each do |order| %>
+        
+        <td>Order just placed reference: <%= order.id %></td>
+        
+        
+        <% end %>
+    </tr>
+  
+</table>
+
+
+
+<table id="customers">
+    <% @total = 0 %>
+    
+    <% @orderitems.each do |id, quantity| %>
+    
+    <tr>
+        <% item = Orderitem.find_by_id(id) %>
+        
+        <td><%= item.title %></td>
+        <td><%= item.quantity %></td>
+        <td><%= item.price %></td>
+        
+        
+    </tr>
+    
+    <% timx = (item.quantity * item.price) %>
+    
+    <% @total += timx %>
+    
+    <% end %>
+    
+    <tr>
+        <td>Order Total: <%= @total %></td>
+        <% shipping= 7 %> 
+        <% @overall= shipping + @total %>
+    </tr>
+        
+        <tr>
+            <td>Shipping &euro;7 </td>
+        </tr>
+        
+        <tr>
+        <td>You pay: <%= @overall %> </td>
+        </tr>
+    
+     <tr>
+        <td><a href="/paid" class="button">Pay Now</a> </td>
+    </tr>
+    
+    
+</table>
+</div>

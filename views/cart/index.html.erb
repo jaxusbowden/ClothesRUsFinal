@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+<div class="mainCont">
+<% if @cart.empty? %>
+    <h1> Your cart is empty</h1>
+<%end%>
+
+
+<table id="customers">
+    <% total = 0 %>
+    <% @cart.each do |id, quantity | %>
+    
+    <% item = Item.find_by_id(id) %>
+        <tr>
+        <td>
+            <div class="image">
+                <%= link_to (image_tag item.image_url, :style =>"height:40px"), item %>
+        
+            </div>
+        </td>
+        
+        <td><%= link_to item.title, item %></td>
+        <td><a href="/cart/remove/<%= item.id %>">Remove From Cart</a></td>
+        <td><%= number_to_currency(item.price, :unit => "€") %> </td>
+        <td><%= quantity %></td>
+        <td><%= number_to_currency(quantity * item.price, :unit => "€") %></td>
+    </tr>
+    <tr> <% total += quantity * item.price %> 
+ 
+        
+    </tr>
+    
+    <% end %>
+           <td>
+            Grand Total: <%= number_to_currency(total, :unit => "€") %>
+            
+        </td>
+    
+    
+</table>
+
+<p>
+    <a href="/items" class="button">Continue Shopping</a>
+    <a href="/checkout" class="button">Checkout</a>
+    <a href="/clear" class="button">Clear Cart</a> 
+    
+    
+    </p>
+    </div>
+    
