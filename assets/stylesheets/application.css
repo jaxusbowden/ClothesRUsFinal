@@ -1,0 +1,250 @@
+.headSec {
+    background:url("/assets/Site/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 10px;
+    background-color: #333;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+
+
+.mainCont { 
+    
+    margin: auto;
+    width:80%;
+    border: 3px solid;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    font-family: verdana;
+    color: #4d1009;
+    border-color: #A71439;
+}
+
+.mainCont h1 {
+    color: #BF2734; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+    
+}
+
+.mainCont h2{
+    color: #4d1009; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+    
+}
+
+
+
+
+.welcomeImg {
+    width: 20%;
+     border-radius: 8px;
+     position: relative;
+     bottom: 30px;
+     top: 30px;
+}
+
+
+.foot {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+      background-repeat:no-repeat;
+      background-position:right bottom;
+      width: 100%;
+      min-height: 700px;
+      background-color: #F2F0EA;
+      color: #4d1009;
+}
+
+
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+
+#itemsContainer h1 {
+   display: block;
+    color: #4d1009;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    
+    
+    
+}
+
+
+.itemhols {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 22%;
+    padding:10px;
+    min-height: 300px;
+    color: #4d1009;
+    
+ 
+    
+   
+}
+
+
+.itemhols h1 {
+   display: block;
+    color: #4d1009;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+   
+  
+  
+}
+
+.itemhols  h2 { 
+color: #4d1009;
+font-family: 'Raleway',sans-serif;
+font-size: 15px; 
+font-weight: 800; 
+line-height: 36px; 
+margin: 0 0 24px; 
+text-align: center; }
+
+
+.itemhols  h3 { 
+color: #4d1009;
+font-family: 'Raleway',sans-serif;
+font-size: 10px; 
+font-weight: 800; 
+line-height: 36px; 
+margin: 0 0 24px; 
+text-align: center; }
+
+
+
+
+.itemhols p {
+   display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+
+.itemhols a:link, a:visited {
+    background-color: white;
+    color: #C12530;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+.itemhols a:hover, a:active {
+    background-color: white;
+
+}
+
+.itemholsIm {
+    width: 60%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+
+.button {
+    background-color: #606761;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+input, textarea { display: block; }
+
+ 
